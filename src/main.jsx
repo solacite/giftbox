@@ -4,14 +4,15 @@ import './index.css'
 
 function MyButton() {
   return (
-    <button>bawefhwoef</button>
+    <button class="btn">how'd it go?</button>
   );
 }
-
+  
 export default function MyApp() {
   return (
     <div>
-      <h1>welc to the gang</h1>
+      <img src="/src/assets/pinkskybg.png" alt="background" className="pink-sky-bg" />
+      <h1 className="big-text">one year.</h1>
       <MyButton />
     </div>
   );

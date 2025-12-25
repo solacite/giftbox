@@ -1,0 +1,39 @@
+.pink-sky-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.big-text {
+  margin-top: 10vh;
+  margin-bottom: 0vh;
+  font-size: 300px;
+}
+
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('./assets/fonts/InstrumentSerif-Regular.ttf');;
+}
+
+@font-face {
+  font-family: 'InstrumentSerifItalic';
+  src: url('./assets/fonts/InstrumentSerif-Italic.ttf');;
+}
+
+body {
+  font-family: 'InstrumentSerif', serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.btn {
+  font-family: 'InstrumentSerifItalic', serif;
+  margin-top: 0vh;
+  background-color: none;
+  border-radius: 12px;
+  font-size: 50px;
+}
