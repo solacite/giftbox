@@ -11,7 +11,20 @@
 .big-text {
   margin-top: 10vh;
   margin-bottom: 0vh;
-  font-size: 300px;
+  font-size: 80px;
+}
+
+.sub-text {
+  margin: 0;
+  font-size: 80px;
+}
+
+.sub-text.hidden {
+  opacity: 0;
+}
+
+.sub-text.revealed {
+  animation: fadeIn 0.4s ease-out;
 }
 
 @font-face {
@@ -28,12 +41,57 @@ body {
   font-family: 'InstrumentSerif', serif;
   font-size: 50px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease-in forwards;
 }
 
 .btn {
   font-family: 'InstrumentSerifItalic', serif;
+  padding: 10px 20px;
   margin-top: 0vh;
-  background-color: none;
+  margin-left: 0;
+  background-color: transparent;
   border-radius: 12px;
-  font-size: 50px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
