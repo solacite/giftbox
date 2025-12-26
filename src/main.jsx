@@ -36,11 +36,10 @@ export default function MyApp() {
   const cardClass = `card ${isAnimating ? 'fade-out' : 'fade-in'}`;
   const [line1, line2] = pages[pageIndex];
 
-  // Change background based on page index
   const getBgImage = () => {
-    if (pageIndex === pages.length - 1) return '/src/assets/pinkskybg3.png';
-    if (pageIndex === 1) return '/src/assets/pinkskybg2.png';
-    return '/src/assets/pinkskybg.png';
+    if (pageIndex === pages.length - 1) return '/pinkskybg3.png';
+    if (pageIndex === 1) return '/pinkskybg2.png';
+    return '/pinkskybg.png';
   };
 
   return (
